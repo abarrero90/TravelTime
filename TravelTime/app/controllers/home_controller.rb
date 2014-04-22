@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     @user = User.all
     nick = params[:nick]
     user = User.find_by name:  nick
-    print "===========>"
+    print '===========>'
     print user.photo
     if user.name and user.authenticate(params[:password])
       @show_show = true
