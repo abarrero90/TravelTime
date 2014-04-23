@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <div class = 'container'>
+            <div class = 'personal'>
+              <%= @user.id %>
+              <div class = 'photo'>
+                <%= image_tag @user.avatar_file_name %>
+               </div>
+            </div>
+            <div class = 'latest_photos'>
+              <% if Photo.count.zero? %>
+                <p>Add your first photo</p>
+                <%= link_to 'Add Photo' , new_photo_path %>
+              <% else %>
+                  <%= link_to 'Add Photo', adding_photo_path(@user) %>
+                  <div class = 'galery'>
+                    <% cache ['photos', Photo.latest] do %>
+                        <% @photos.each do |photo| %>
+                            <% if @user.id == photo.user_id %>
+                                <%= image_tag photo.avatar_file_name %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                  </div>
+              <% end %>
+            </div>
+            <div id='test'></div>
+            <div class = 'calendar'></div>
+            <div class = 'table'></div>
+        </div>
+
+    </body>
+
+</html>
+
+

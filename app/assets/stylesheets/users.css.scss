@@ -1,0 +1,35 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container {
+  width: 100% ;
+  height: 100% ;
+  margin: 0px;
+  padding: 0px;
+
+    .personal{
+        margin: 2%;
+        padding: 3%;
+        text-transform: capitalize;
+      img {      // When a tag elemt is type like this way, the style will be available for every tag of that type.
+        width: 120px;
+        margin-right: 2000px;
+        margin-bottom: 5px;
+        position: absolute;
+      }
+    }
+    .latest_photos{
+      width: 25%;
+      margin-top: 00%;
+      margin-left: 60%;
+      padding: 5%;
+      img {      // When a tag elemt is type like this way, the style will be available for every tag of that type.
+        width: 130px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        position: relative;
+      }
+    }
+}

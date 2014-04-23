@@ -1,0 +1,17 @@
+
+<html>
+<body>
+<div class = 'container'>
+  <div class = 'personal'>
+
+    <div class = 'photo'>
+
+      <%= image_tag @photo.avatar_file_name %>
+    </div>
+  </div>
+</div>
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
+</body>
+
+</html>
