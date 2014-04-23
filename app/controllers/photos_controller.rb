@@ -37,9 +37,9 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    @user = session[:user_id]
+    @user = :user_id
     print 'PARAMETROS =======>     '
-    print @user
+    print current_user.id
     #print 'ESTE ES EL USUARIO' + String(@add_photo_user_id.id)
     #@photo = Photo.create(photo_params, user_id: @user.id)
     #@photo = user.photos.create(photo_params)
