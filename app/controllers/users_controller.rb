@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @photos = Photo.all
-    print 'ID DEL CURRENT_USER == >' + String(@current_user)
+    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
 
   end
 
