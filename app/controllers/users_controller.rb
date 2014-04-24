@@ -12,13 +12,14 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @photos = Photo.all
+    print 'ID DEL CURRENT_USER == >' + String(@current_user)
+
   end
 
 
   def add_photo
     @photo = Photo.new
     @us_id = params[:id]
-    print 'ID USER => ' + String(@us_id)
     render 'add_photo'
   end
 
@@ -41,6 +42,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     respond_to do |format|
       if @user.save
+        sign_in @user
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -78,7 +80,6 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
-      @current_user = @user.id
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
