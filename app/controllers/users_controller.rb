@@ -12,13 +12,14 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @photos = Photo.all
+    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
+
   end
 
 
   def add_photo
     @photo = Photo.new
     @us_id = params[:id]
-    print 'ID USER => ' + String(@us_id)
     render 'add_photo'
   end
 
@@ -41,6 +42,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     respond_to do |format|
       if @user.save
+        sign_in @user
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -82,6 +84,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :password, :password_confirmation, :photo, :avatar)
+      params.require(:user).permit(:name, :password, :password_confirmation, :photo, :avatar, :current_user)
     end
 end
