@@ -10,7 +10,7 @@ TravelTime::Application.routes.draw do
   post '/home/add/' => 'photos#add'
   get  '/home/add/' => 'photos#add'
   get '/users/:id/add' => 'users#add_photo', as: 'adding_photo'
-
+  get '/test'  => 'photos#test'
 
 
 

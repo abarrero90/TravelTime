@@ -14,7 +14,9 @@ class PhotosController < ApplicationController
   def show
   end
 
-
+  def test
+    render 'prueba'
+  end
   # GET /photos/new
   def new
     @photo = Photo.new
