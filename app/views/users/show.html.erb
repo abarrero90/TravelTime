@@ -1,36 +1,42 @@
+<!DOCTYPE HTML>
 <html>
-    <body>
-        <div class = 'container'>
-            <div class = 'personal'>
-              <%= @user.name %>
-              <div class = 'photo'>
-                <%= image_tag @user.avatar_file_name %>
-               </div>
-            </div>
-            <div class = 'latest_photos'>
-              <% if Photo.count.zero? %>
-                <p>Add your first photo</p>
-                <%= link_to 'Add Photo' , new_photo_path %>
-              <% else %>
-                  <%= link_to 'Add Photo', adding_photo_path(@user) %>
-                  <div class = 'galery'>
-                    <% cache ['photos', Photo.latest] do %>
-                        <% @photos.each do |photo| %>
-                            <% if @user.id == photo.user_id %>
-                                <%= image_tag photo.avatar_file_name %>
-                            <% end %>
-                        <% end %>
-                    <% end %>
-                  </div>
-              <% end %>
-            </div>
-            <div id='test'></div>
-            <div class = 'calendar'></div>
-            <div class = 'table'></div>
-        </div>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>Untitled Document</title>
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+  <link href="file:///Macintosh HD/Users/abarrero/Documents/Proyectos_RoR/TFG/dreamweaver/css/traveltime.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<!--<style>
+    .content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+    ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+</head>
 
-    </body>
+<body>
 
+<div class="container">
+  <div class="header">
+    <p><a href="#"><img src='/assets/logo.jpg' style="background: #8090AB; display:float;" /></a><p class='traveltime'>Travel Time</p>  </div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="#">Link one</a></li>
+      <li><a href="#">Link two</a></li>
+      <li><a href="#">Link three</a></li>
+      <li><a href="#">Link four</a></li>
+    </ul>
+    <p> The above links demonstrate a basic navigational structure using an unordered list styled with CSS. Use this as a starting point and modify the properties to produce your own unique look. If you require flyout menus, create your own using a Spry menu, a menu widget from Adobe's Exchange or a variety of other javascript or CSS solutions.</p>
+    <p>If you would like the navigation along the top, simply move the ul.nav to the top of the page and recreate the styling.</p>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1 class ="name"><%= @user.name %></h1>
+    <%= image_tag @user.avatar_file_name %>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
 </html>
-
-
