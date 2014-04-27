@@ -1,13 +1,14 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// background-image:url('/assets/sky.jpg');
 @charset "UTF-8";
 body {
   font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-  /* ~~ background: #DDD;~~*/
-  background-image:url('/assets/sky.jpg');
+  font-size: 20px;
+  background: #CED9E4;
   margin: 0;
-
+  padding-top: 50px;
   padding-left: 10px;
   color: #000;
 }
@@ -40,13 +41,38 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 /* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+
 .container {
-  width: 80%;
-  max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+  width: 95%;
+  max-width: 2260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
   min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
   background: #FFF;
   margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
 }
+
+.user-resume {
+  display: table-cell;
+  width: 10%;
+  height: 10%;
+}
+
+.user-img_style {
+  width: 160px;
+  height: 160px;
+  padding-left: 10px;
+}
+
+.user-name {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.user-latest-photos {
+  display: table-cell;
+  width: 10%;
+  height: 10%;
+}
+
 
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
@@ -55,6 +81,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   width: 30%;
 
 }
+
 .traveltime {
   background: #C5FBFB;
   position: absolute;
@@ -72,9 +99,6 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 }
 
-.name {
-  text-transform:capitalize;
-}
 
 
 
@@ -96,7 +120,7 @@ style="background: #8090AB; display:float;" /></a>Travel Time</p>
 
 */
 .sidebar1 {
-  float: left;
+  float: right;
   width: 20%;
   background: #DDD;
   padding-bottom: 10px;

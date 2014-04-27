@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   before_create :create_remember_token
 
+
   def self.latest
     User.order(:updated_at).last
   end
