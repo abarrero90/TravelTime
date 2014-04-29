@@ -1,8 +1,11 @@
 class SessionsController < ApplicationController
-
-
+  layout 'session-layout.html.erb'
   def new
     render 'new'
+  end
+
+  def index
+    render 'index'
   end
 
   def create

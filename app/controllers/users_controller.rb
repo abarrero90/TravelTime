@@ -34,6 +34,11 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def galery
+    render 'gallery'
+  end
+
+
   # POST /users
   # POST /users.json
   def create

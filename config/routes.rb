@@ -11,7 +11,8 @@ TravelTime::Application.routes.draw do
   get  '/home/add/' => 'photos#add'
   get '/users/:id/add' => 'users#add_photo', as: 'adding_photo'
   get '/test'  => 'photos#test'
-
+  get '/galery' => 'users#galery'
+  get '/index' => 'sessions#index'
 
 
   match '/signup',  to: 'users#new',            via: 'get'
