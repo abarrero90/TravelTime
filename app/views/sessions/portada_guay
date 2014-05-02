@@ -1,0 +1,1523 @@
+<head><script src="http://l.yimg.com/ss/rapid-3.14.js"></script><script src="http://edge.quantserve.com/quant.js"></script><script src="//www.google-analytics.com/ga.js"></script><script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=c9a24c93905a6db0265be4f39f27f15e"></script>
+
+
+
+<!--
+Rubric
+Theme: Rubric (http://rubrictheme.tumblr.com/)
+Developer: Theme Static (http://themestatic.tumblr.com/)
+Version: 1.0
+-->
+<meta name="color:Background" content="#FBFBFB">
+<meta name="color:Body links hover" content="#56616B">
+<meta name="color:Body links" content="#A3A3A3">
+<meta name="color:Body text" content="#504F4F">
+<meta name="color:Masthead text" content="#FFFFFF">
+<meta name="color:Masthead buttons" content="#1C1C22">
+<meta name="color:Posts" content="#ffffff">
+<meta name="color:Post titles" content="#353535">
+<meta name="color:Post metadata links" content="#C3C3C3">
+<meta name="color:Text highlight" content="#E4E4E4">
+
+<meta name="if:Background image cover" content="1">
+<meta name="if:Background image in fixed position" content="1">
+<meta name="if:Background image no repeat" content="1">
+<meta name="if:Infinite scroll" content="1">
+<meta name="if:Like and reblog buttons" content="1">
+<meta name="if:Masthead avatar" content="1">
+<meta name="if:Masthead description" content="0">
+<meta name="if:Masthead search" content="0">
+<meta name="if:Masthead site name" content="1">
+<meta name="if:Navigation bar RSS link" content="1">
+<meta name="if:Navigation bar archive link" content="1">
+<meta name="if:Permalink post notes" content="1">
+<meta name="if:Permalink tag links" content="1">
+<meta name="if:Background image gradient" content="1">
+
+<meta name="image:Background" content="http://static.tumblr.com/ns3mt1d/pMUmw91dp/default_background_img.jpg">
+
+<meta name="select:Body font" content="Source Sans Pro" title="Source Sans Pro">
+<meta name="select:Body font" content="Fredoka One" title="Fredoka One">
+<meta name="select:Body font" content="Old Standard TT" title="Old Standard TT">
+<meta name="select:Body font" content="Playfair Display" title="Playfair Display">
+<meta name="select:Body font" content="Share" title="Share">
+<meta name="select:Body font" content="Source Code Pro" title="Source Code Pro">
+<meta name="select:Body font" content="Roboto" title="Roboto">
+<meta name="select:Body font" content="Yanone Kaffeesatz" title="Yanone Kaffeesatz">
+
+<meta name="select:Title font" content="Source Sans Pro" title="Source Sans Pro">
+<meta name="select:Title font" content="Permanent Marker" title="Permanent Marker">
+<meta name="select:Title font" content="Rock Salt" title="Rock Salt">
+<meta name="select:Title font" content="Amatic SC" title="Amatic SC">
+<meta name="select:Title font" content="Jockey One" title="Jockey One">
+<meta name="select:Title font" content="Lobster Two" title="Lobster Two">
+<meta name="select:Title font" content="Fredoka One" title="Fredoka One">
+<meta name="select:Title font" content="Old Standard TT" title="Old Standard TT">
+<meta name="select:Title font" content="Playfair Display" title="Playfair Display">
+<meta name="select:Title font" content="Share" title="Share">
+<meta name="select:Title font" content="Source Code Pro" title="Source Code Pro">
+<meta name="select:Title font" content="Roboto" title="Roboto">
+<meta name="select:Title font" content="Yanone Kaffeesatz" title="Yanone Kaffeesatz">
+
+
+
+<meta name="text:Font size" content="1.2em">
+<meta name="text:Google Analytics ID" content="">
+<meta name="text:Tagline" content="">
+
+<meta name="description" content="Rubric is a two-column Tumblr theme from Theme Static, the creators of beautiful Tumblr themes.">
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<title> Rubric</title>
+<link rel="shortcut icon" href="http://37.media.tumblr.com/avatar_7f863358f65e_128.png">
+<link rel="apple-touch-icon" href="http://37.media.tumblr.com/avatar_7f863358f65e_128.png">
+<link rel="alternate" type="application/rss+xml" href="http://rubrictheme.tumblr.com/rss">
+<link href="http://fonts.googleapis.com/css?family=Source Sans Pro|Source Sans Pro" rel="stylesheet" type="text/css">
+<link href="http://static.tumblr.com/wgijwsy/YZomlhwl6/normalize.min.css" rel="stylesheet" type="text/css">
+<link href="http://static.tumblr.com/ns3mt1d/YAumw93bl/rubric.min.css" rel="stylesheet" type="text/css">
+
+<style>
+        /* USER CUSTOMIZATION */
+    ::-moz-selection {
+        background: #E4E4E4;
+    }
+    ::selection {
+        background: #E4E4E4;
+    }
+    @font-face {
+        font-family: 'icons';
+        src: url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background: #FBFBFB url('http://static.tumblr.com/ns3mt1d/pMUmw91dp/default_background_img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #504F4F;
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+    .icons {
+        font-family: 'icons', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    }
+    a {
+        color: #A3A3A3;
+    }
+    a:hover {
+        color: #56616B;
+    }
+    #masthead h1 a, #masthead p, #widget-wrapper, #widget-wrapper a {
+        color: #FFFFFF;
+    }
+    article {
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.04);
+        background: #ffffff;
+    }
+    .title a {
+        color: #353535;
+    }
+    .metadata a {
+        color: #C3C3C3;
+    }
+    #pages li a {
+        background: #1C1C22;
+    }
+    #blog-name {
+        font-family: 'Source Sans Pro';
+    }
+    #pagination a {
+        color: ;
+    }
+
+</style>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=rubrictheme">
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995"><meta property="og:title" content="Rubric"><meta property="og:url" content="http://rubrictheme.tumblr.com/?og=1"><meta property="og:description" content="Rubric is a two-column Tumblr theme from Theme Static, the creators of beautiful Tumblr themes."><meta property="og:type" content="tumblr-feed:tumblelog"><meta property="og:image" content="http://37.media.tumblr.com/avatar_7f863358f65e_128.png"><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=rubrictheme"><meta property="al:ios:app_name" content="Tumblr"><meta property="al:ios:app_store_id" content="305343404"><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=rubrictheme"><meta property="al:android:app_name" content="Tumblr"><meta property="al:android:package" content="com.tumblr"><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="rubrictheme"><meta name="twitter:description" content="Rubric is a two-column Tumblr theme from Theme Static, the creators of beautiful Tumblr themes."><meta name="twitter:app:name:iphone" content="Tumblr"><meta name="twitter:app:name:ipad" content="Tumblr"><meta name="twitter:app:name:googleplay" content="Tumblr"><meta name="twitter:app:id:iphone" content="305343404"><meta name="twitter:app:id:ipad" content="305343404"><meta name="twitter:app:id:googleplay" content="com.tumblr"><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=rubrictheme&amp;referrer=twitter-cards"><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=rubrictheme&amp;referrer=twitter-cards"><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=rubrictheme&amp;referrer=twitter-cards">
+
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=9c08bd3402511ad52fc4e5f1f6fb0913"></script><style id="tumblr_teaser_follow_css" type="text/css">
+    #tumblr_teaser_follow {
+        display: block;
+        opacity: 1;
+        visibility: hidden;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 1px;
+        height: 1px;
+        z-index: 2147483647;
+    }
+    #tumblr_teaser_follow.open {
+        visibility: visible;
+        width: 310px;
+        height: 110px;
+    }
+</style><style id="tumblr_iframe_css" type="text/css">
+    .tumblr_controls {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        opacity: 1;
+        width: 1px;
+        height: 1px;
+        z-index: 2147483647;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .tumblr_controls.visible {
+        visibility: visible;
+        pointer-events: all;
+    }
+    .tumblr_controls.sticky {
+        position: fixed;
+    }
+    .tumblr_controls.transition {
+        -webkit-transition: top 0.1s ease;
+        -moz-transition: top 0.1s ease;
+        -ms-transition: top 0.1s ease;
+        -o-transition: top 0.1s ease;
+        transition: top 0.1s ease;
+    }
+    iframe#tumblr_controls.tumblr_controls.sticky.transition {
+        -webkit-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -moz-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -ms-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -o-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        top: 0 !important;
+    }
+    .tumblr_controls.sticky.transition {
+        -webkit-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -moz-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -ms-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        -o-animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        animation: tumblr_controls_fade_in 0.3s 0.2s linear 1 both;
+        top: 0 !important;
+    }
+    .tumblr_controls.flash_fix {
+        visibility: hidden !important;
+    }
+    #tumblr_controls {
+        width: 327px;
+        height: 36px;
+    }
+    @-webkit-keyframes tumblr_controls_fade_in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes tumblr_controls_fade_in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-ms-keyframes tumblr_controls_fade_in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes tumblr_controls_fade_in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes tumblr_controls_fade_in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta name="keywords" content="photography,indie,texture,laptop,technology">
+</head>
+<body class=" index">
+
+<header id="masthead">
+
+
+  <div id="pages" class="widget">
+    <nav>
+      <ul>
+        <li> <a href="/features">Features</a></li><li> <a href="/themestatic">Our themes</a></li><li> <a href="/install">Install</a></li>
+
+
+
+
+      </ul>
+    </nav>
+  </div>
+
+  <div id="blog-name" class="widget">
+    <a href="/" title="Home"><img src="http://37.media.tumblr.com/avatar_7f863358f65e_128.png"></a>
+
+    <h1><a href="/" title="Home">Rubric</a></h1>
+
+
+  </div>
+
+
+</header>
+
+<div id="wrapper">
+<div style="position: relative; height: 5927.78px;" id="content">
+
+
+
+
+
+<article style="position: absolute; left: 0px; top: 0px;" id="67001219294" data-tags="themes free_themes grid_themes theme" class="load_more user-class-themes user-class-free_themes user-class-grid_themes user-class-theme">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/67001219294/install-rubric-free-from-theme-static" class="datetime"> <time datetime="2013-11-14"><span class="day-month">14 November</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/67001219294"><img src="http://24.media.tumblr.com/bdb2486409a8fd85f06f5da45b1fe0ad/tumblr_mw9z4eMecJ1sw0zslo1_1280.jpg" alt="Install Rubric, free from Theme Static."></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a href="http://rubrictheme.tumblr.com/install">Install Rubric</a>, free from <a href="http://themestatic.tumblr.com/">Theme Static</a>.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="67001219294" id="like_button_67001219294"><iframe id="like_iframe_67001219294" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=67001219294&amp;rk=vfsi6EHD" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/67001219294/vfsi6EHD" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article>
+
+<article style="position: absolute; left: 511px; top: 0px;" id="66996389752" data-tags="photography cliff indie" class="load_more user-class-photography user-class-cliff user-class-indie">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/66996389752/the-granite-cliff-curved-away-out-of-sight-and-he" class="datetime"> <time datetime="2013-11-14"><span class="day-month">14 November</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/66996389752"><img src="http://37.media.tumblr.com/e56841e06cd277d7534c4ecf7cbedf7f/tumblr_mw9wnf3QDq1sw0zslo1_1280.jpg" alt="The granite cliff curved away out of sight, and he couldn&amp;#8217;t see if it had a foot. He saw only endless blue, beyond, below, and on both sides. Clouds passed slowly.
+The Piebald Hippogriff (Karen Anderson)"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p>The granite cliff curved away out of sight, and he couldn’t see if it had a foot. He saw only endless blue, beyond, below, and on both sides. Clouds passed slowly.</p>
+      <p><a href="http://www.gutenberg.org/ebooks/43048">The Piebald Hippogriff (Karen Anderson)</a></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="66996389752" id="like_button_66996389752"><iframe id="like_iframe_66996389752" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=66996389752&amp;rk=xKUU4Ouf" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/66996389752/xKUU4Ouf" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article>
+
+<article style="position: absolute; left: 0px; top: 571px;" id="66996475846" data-tags="photography indie texture" class="load_more user-class-photography user-class-indie user-class-texture">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/66996475846/learn-more-about-rubrics-features-including" class="datetime"> <time datetime="2013-11-14"><span class="day-month">14 November</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/66996475846"><img src="http://24.media.tumblr.com/25a89be9a2a31bd0c97fafe17761e350/tumblr_mw9woygtkB1sw0zslo1_1280.jpg" alt="Learn more about Rubric&amp;#8217;s features, including high-resolution photos like above."></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p>Learn more about <a href="http://rubrictheme.tumblr.com/features">Rubric’s features</a>, including high-resolution photos like above.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="66996475846" id="like_button_66996475846"><iframe id="like_iframe_66996475846" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=66996475846&amp;rk=9Fd6XJCc" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/66996475846/9Fd6XJCc" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article>
+
+<article style="position: absolute; left: 511px; top: 687px;" id="53651497766" data-tags="indie photography mountain" class="load_more user-class-indie user-class-photography user-class-mountain">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53651497766" class="datetime"> <time datetime="2013-06-23"><span class="day-month">23 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/53651497766"><img src="http://37.media.tumblr.com/b116eb637769a61228ae5a58d497adc6/tumblr_moty93HsFK1sw0zslo1_1280.jpg" alt=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53651497766" id="like_button_53651497766"><iframe id="like_iframe_53651497766" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53651497766&amp;rk=lNjQxl92" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53651497766/lNjQxl92" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article>
+
+<article style="position: absolute; left: 0px; top: 1191px;" id="53423099907" data-tags="photography laptop technology  reblog" class="load_more user-class-photography user-class-laptop user-class-technology user-class- user-class-reblog">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53423099907/while-im-reblogging-this-sleek-machine-check-out" class="datetime"> <time datetime="2013-06-20"><span class="day-month">20 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/51495156548/download-by-alejandro-escamilla">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/19htMor"><img src="http://31.media.tumblr.com/4d1f173744a32bb4b35a2d5d0babff74/tumblr_mnh29fxz111st5lhmo1_1280.jpg" alt="While I&amp;#8217;m reblogging this sleek machine, check out Unsplash&amp;#8212;we&amp;#8217;ve posted a couple of their photos here.
+Unsplash have heaps of free photographs in super high resolution. Awesome, right?"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p>While I’m reblogging this sleek machine, check out <a class="tumblr_blog" href="http://unsplash.com/">Unsplash</a>—we’ve posted a couple of their photos here.</p>
+      <p>Unsplash have heaps of free photographs in super high resolution. Awesome, right?</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53423099907" id="like_button_53423099907"><iframe id="like_iframe_53423099907" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53423099907&amp;rk=IlWEZFAJ" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53423099907/IlWEZFAJ" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article>
+
+<article style="position: absolute; left: 511px; top: 1196px; opacity: 1;" id="53422902366" data-tags="quotes brevity minimalism language quote" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53422902366/brevity" class="datetime"> <time datetime="2013-06-20"><span class="day-month">20 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+
+
+
+
+  <div class="quote post">
+    <blockquote>
+      <span class="unicode">“</span>Brevity<span class="unicode">”</span>
+    </blockquote>
+
+    <div class="inner">
+      <p>Anonymous</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53422902366" id="like_button_53422902366"><iframe id="like_iframe_53422902366" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53422902366&amp;rk=bbNlJ0Ek" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53422902366/bbNlJ0Ek" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 1613px; opacity: 1;" id="53422720884" data-tags="music jash_iscos songs demo recording" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53422720884/testing-out-the-audio-player-nice-chords-and-a" class="datetime"> <time datetime="2013-06-20"><span class="day-month">20 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="audio post">
+
+    <h1 class="title"><a href="http://rubrictheme.tumblr.com/post/53422720884/testing-out-the-audio-player-nice-chords-and-a">Got Rhythm</a></h1>
+
+
+    <div class="inner">
+      <div class="audio_embed">
+        <iframe class="tumblr_audio_player tumblr_audio_player_53422720884" src="http://rubrictheme.tumblr.com/post/53422720884/audio_player_iframe/rubrictheme/tumblr_mooiw7GJfD1sw0zsl?audio_file=https%3A%2F%2Fwww.tumblr.com%2Faudio_file%2Frubrictheme%2F53422720884%2Ftumblr_mooiw7GJfD1sw0zsl&amp;color=white" allowtransparency="true" frameborder="0" height="169" scrolling="no" width="500"></iframe>
+
+      </div>
+
+      <p>Testing out the audio player. Nice chords and a couple of missed bars.</p>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53422720884" id="like_button_53422720884"><iframe id="like_iframe_53422720884" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53422720884&amp;rk=wHb1qKVQ" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53422720884/wHb1qKVQ" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 1879px; opacity: 1;" id="53422552184" data-tags="vector_art artists_on_tumblr art" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53422552184" class="datetime"> <time datetime="2013-06-20"><span class="day-month">20 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/53422552184"><img src="http://37.media.tumblr.com/d4723c30bb5d794c4a96f2411f99e3bf/tumblr_mooipz1PLL1sw0zslo1_1280.png" alt=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53422552184" id="like_button_53422552184"><iframe id="like_iframe_53422552184" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53422552184&amp;rk=Fhck0ltZ" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53422552184/Fhck0ltZ" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 2202px; opacity: 1;" id="53422046956" data-tags="wallpaper stripes pattern patterns indie" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53422046956" class="datetime"> <time datetime="2013-06-20"><span class="day-month">20 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/53422046956"><img src="http://37.media.tumblr.com/6b9bf226bf436aeb699dee8fc4c88a90/tumblr_mooi7qQXNq1sw0zslo1_1280.png" alt=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53422046956" id="like_button_53422046956"><iframe id="like_iframe_53422046956" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53422046956&amp;rk=wrbH8Q8N" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53422046956/wrbH8Q8N" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 2417px;" id="53341190464" data-tags="vector vector_art art artists_on_tumblr computer_art" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53341190464" class="datetime"> <time datetime="2013-06-19"><span class="day-month">19 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/53341190464"><img src="http://24.media.tumblr.com/0d7af28ca6dbaad6e2ace5075fb1eb5d/tumblr_mommj7bQrG1sw0zslo1_r1_1280.png" alt=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53341190464" id="like_button_53341190464"><iframe id="like_iframe_53341190464" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53341190464&amp;rk=rLpyVMpO" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53341190464/rLpyVMpO" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 2675px; opacity: 1;" id="53340569464" data-tags="artists_on_tumblr art indie illustration vector_art" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53340569464" class="datetime"> <time datetime="2013-06-19"><span class="day-month">19 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://rubrictheme.tumblr.com/image/53340569464"><img src="http://37.media.tumblr.com/a51f586e68eb5852b7809fe81ecaced4/tumblr_momlz6szlx1sw0zslo1_r1_1280.png" alt=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53340569464" id="like_button_53340569464"><iframe id="like_iframe_53340569464" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53340569464&amp;rk=fwjdwWSU" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53340569464/fwjdwWSU" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 2955px; opacity: 1;" id="53332127649" data-tags="rhetorical_question language english question" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53332127649/rhetorical-questions" class="datetime"> <time datetime="2013-06-18"><span class="day-month">18 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="chat post">
+    <h1 class="title"><a href="http://rubrictheme.tumblr.com/post/53332127649/rhetorical-questions">Rhetorical questions</a></h1>
+
+    <div class="inner">
+      <ul>
+        <li class="odd"><span class="label">NY:</span> What's a rhetorical question?
+        </li><li class="even"><span class="label">LA:</span> ... </li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53332127649" id="like_button_53332127649"><iframe id="like_iframe_53332127649" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53332127649&amp;rk=6DDvbdu3" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53332127649/6DDvbdu3" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 3213px; opacity: 1;" id="53079369724" data-tags="neil_young music" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53079369724/music-update" class="datetime"> <time datetime="2013-06-16"><span class="day-month">16 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+  <div class="text post">
+    <h1 class="title"><a href="http://rubrictheme.tumblr.com/post/53079369724/music-update">Music update</a></h1>
+    <div class="inner">
+      <p>In the mood for some Neil Young.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53079369724" id="like_button_53079369724"><iframe id="like_iframe_53079369724" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53079369724&amp;rk=6EBY10tF" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53079369724/6EBY10tF" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 3390px; opacity: 1;" id="53063870385" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063870385/unsplash-download-by-alejandro-escamilla" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/51493448215/download-by-alejandro-escamilla">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/1145TtU"><img src="http://24.media.tumblr.com/3fdd23292b5a040db4ed5af6dd1b91f1/tumblr_mnh17lfd9R1st5lhmo1_1280.jpg" alt="unsplash:
+
+Download&nbsp; / &nbsp;By&nbsp;Alejandro Escamilla
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/51493448215/download-by-alejandro-escamilla">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/10OiWzY">Download</a><span>&nbsp; / &nbsp;By&nbsp;</span><a href="http://alejandroescamilla.com/">Alejandro Escamilla</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063870385" id="like_button_53063870385"><iframe id="like_iframe_53063870385" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063870385&amp;rk=1XM5p9WJ" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063870385/1XM5p9WJ" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 3603px; opacity: 1;" id="53064209364" data-tags="bertolt_brecht play life_of_galileo" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53064209364/when-there-are-obstacles-the-shortest-line" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+
+    </ul></header>
+
+
+
+
+
+
+
+
+
+  <div class="quote post">
+    <blockquote>
+      <span class="unicode">“</span>When there are obstacles, the shortest line between two points maybe a crooked one.<span class="unicode">”</span>
+    </blockquote>
+
+    <div class="inner">
+      <p>Bertolt Brecht</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53064209364" id="like_button_53064209364"><iframe id="like_iframe_53064209364" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53064209364&amp;rk=QXqPhs8q" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53064209364/QXqPhs8q" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 4024px; opacity: 1;" id="53063967822" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063967822/unsplash-download-by-paul-jarvis" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/52551357025/download-by-paul-jarvis">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/15HUO5r"><img src="http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg" alt="unsplash:
+
+Download &nbsp;/ &nbsp;By Paul Jarvis
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/52551357025/download-by-paul-jarvis">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/15HUO5r">Download</a> &nbsp;/ &nbsp;By <a href="https://twitter.com/pjrvs">Paul Jarvis</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063967822" id="like_button_53063967822"><iframe id="like_iframe_53063967822" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063967822&amp;rk=kQzeA3Ey" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063967822/kQzeA3Ey" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 4129px; opacity: 1;" id="53063929823" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063929823/unsplash-download-by-paul-jarvis" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/52551356983/download-by-paul-jarvis">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/16QlLZa"><img src="http://24.media.tumblr.com/f772a4607d1578755f6d71028ccd9f6f/tumblr_mo2xijE2nr1st5lhmo1_1280.jpg" alt="unsplash:
+
+Download &nbsp;/ &nbsp;By Paul Jarvis
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/52551356983/download-by-paul-jarvis">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/16QlLZa">Download</a> &nbsp;/ &nbsp;By <a href="https://twitter.com/pjrvs">Paul Jarvis</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063929823" id="like_button_53063929823"><iframe id="like_iframe_53063929823" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063929823&amp;rk=eiBoKthX" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063929823/eiBoKthX" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 4659px; opacity: 1;" id="53063918462" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063918462/unsplash-download-by-paul-jarvis" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/52551357085/download-by-paul-jarvis">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/11xJiJP"><img src="http://24.media.tumblr.com/cc1da4ef67265cc69ffb811723cff268/tumblr_mo2xdqmle51st5lhmo1_1280.jpg" alt="unsplash:
+
+Download &nbsp;/ &nbsp;By Paul Jarvis
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/52551357085/download-by-paul-jarvis">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/11xJiJP">Download</a> &nbsp;/ &nbsp;By <a href="https://twitter.com/pjrvs">Paul Jarvis</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063918462" id="like_button_53063918462"><iframe id="like_iframe_53063918462" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063918462&amp;rk=qcBOKyjs" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063918462/qcBOKyjs" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 511px; top: 4763px; opacity: 1;" id="53063905975" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063905975/unsplash-download-by-paul-jarvis" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/52551356548/download-by-paul-jarvis">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/196TtcS"><img src="http://37.media.tumblr.com/76e816c1cb0b1b214b5d810b9a8b8fe7/tumblr_mo2x80NkDu1st5lhmo1_1280.jpg" alt="unsplash:
+
+Download&nbsp; / &nbsp;By Paul Jarvis
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/52551356548/download-by-paul-jarvis">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/196TtcS">Download</a>&nbsp; / &nbsp;By <a href="https://twitter.com/pjrvs">Paul Jarvis</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063905975" id="like_button_53063905975"><iframe id="like_iframe_53063905975" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063905975&amp;rk=cCjUJO1C" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063905975/cCjUJO1C" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><article style="position: absolute; left: 0px; top: 5293px; opacity: 1;" id="53063855639" data-tags="reblog" class="load_more">
+
+  <header class="metadata date-top">
+    <ul>
+      <li><a href="http://rubrictheme.tumblr.com/post/53063855639/unsplash-download-by-alejandro-escamilla" class="datetime"> <time datetime="2013-06-15"><span class="day-month">15 June</span> 2013</time> </a></li>
+      <li class="source">
+        <a href="http://unsplash.com/post/51495729400/download-by-alejandro-escamilla">unsplash
+        </a></li>
+
+    </ul></header>
+
+
+
+
+
+  <div class="photo post">
+
+    <div class="url">
+      <a href="http://bit.ly/12d1A62"><img src="http://24.media.tumblr.com/f208b2a16c684b8501f1dcb5febbaea6/tumblr_mnh2m1hnS81st5lhmo1_1280.jpg" alt="unsplash:
+
+Download&nbsp; / &nbsp;By&nbsp;Alejandro Escamilla
+"></a>
+    </div>
+
+
+
+
+
+    <div class="inner">
+      <p><a class="tumblr_blog" href="http://unsplash.com/post/51495729400/download-by-alejandro-escamilla">unsplash</a>:</p>
+      <blockquote>
+        <p><a href="http://bit.ly/18EppVH">Download</a>&nbsp; / &nbsp;By&nbsp;<a href="http://alejandroescamilla.com/">Alejandro Escamilla</a></p>
+      </blockquote>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="tumblr-share">
+    <ul>
+      <li><div class="like_button" data-post-id="53063855639" id="like_button_53063855639"><iframe id="like_iframe_53063855639" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=fa292ab73ee80863ffde1edfcbcc185a#name=rubrictheme&amp;post_id=53063855639&amp;rk=wEb5w5Tq" class="like_toggle" allowtransparency="true" frameborder="0" height="20" scrolling="no" width="20"></iframe></div></li>
+      <li><a href="http://www.tumblr.com/reblog/53063855639/wEb5w5Tq" class="reblog_button" style="display: block;width:20px;height:20px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+    </ul>
+  </div>
+
+</article><div style="display: none;" id="infscr-loading"><img style="display: none;" alt="Loading..." src="http://static.tumblr.com/wgijwsy/YJ1m2tzmw/loading.gif"><div style="opacity: 1;">All posts have been loaded</div></div></div>
+</div>
+
+<nav style="display: none;" id="pagination">
+  <ul>
+
+    <li><a href="/page/2" class="icons"><span>n</span></a></li>
+  </ul>
+</nav>
+
+
+
+<script>
+    var theme_options = {
+        infinite_scroll: true
+
+    };
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://static.tumblr.com/wgijwsy/7Xlmrneua/magazine_plugins.min.js"></script>
+<script src="http://static.tumblr.com/ns3mt1d/tj3mw91bi/rubric.min.js"></script>
+
+<script>
+    var _gaq=[['_setAccount','UA-42224349-15'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+<!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/analytics.html?dc636e9b34dfd27b194aed14513506cb#http://rubrictheme.tumblr.com" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target" frameborder="0" height="1" scrolling="no" width="1"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "http://assets.tumblr.com/analytics.html?dc636e9b34dfd27b194aed14513506cb#http://rubrictheme.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script>
+    var _qevents = _qevents || [];
+    (function() {
+        var s = document.createElement('script');
+        var el = document.getElementsByTagName('script')[0];
+        s.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script><script type="text/javascript">
+    _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+</script><noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398965110&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcnVicmljdGhlbWUudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MCwicm91dGUiOiJcLyJ9&U=AGJKMNMOGA&K=42d9d2e386d99116e266dad30cd175bd1921bb216b6ac2b9c2ef2d0b7346db50&R=http%3A%2F%2Fdesignscrazed.com%2Fbest-free-tumblr-themes%2F'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398965110&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcnVicmljdGhlbWUudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MCwicm91dGUiOiJcLyIsIm5vc2NyaXB0IjoxfQ==&U=AGJKMNMOGA&K=e03073887543348156fe2077262c823803c8dc03fe53623a35684feaa1824b7b&R=http%3A%2F%2Fdesignscrazed.com%2Fbest-free-tumblr-themes%2F"></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1398965110&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3J1YnJpY3RoZW1lLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjcwMDEyMTkyOTQiLCJibG9naWQiOiIxMTU3MTY3NjYiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjY2OTk2Mzg5NzUyIiwiYmxvZ2lkIjoiMTE1NzE2NzY2Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI2Njk5NjQ3NTg0NiIsImJsb2dpZCI6IjExNTcxNjc2NiIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTM2NTE0OTc3NjYiLCJibG9naWQiOiIxMTU3MTY3NjYiLCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjoiMTEwOTI3MjkxIiwicm9vdF9wb3N0aWQiOiI1MTQ5NTE1NjU0OCIsInBvc3RpZCI6IjUzNDIzMDk5OTA3IiwiYmxvZ2lkIjoiMTE1NzE2NzY2Iiwic291cmNlIjozM31dfQ==&U=FLPJHNNIKA&K=6108b485ec5687edb59fb43a4be4c9b84e2d2267bb08168a7cc24574d7bd0234&R=http%3A%2F%2Fdesignscrazed.com%2Fbest-free-tumblr-themes%2F'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1398965110&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3J1YnJpY3RoZW1lLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjcwMDEyMTkyOTQiLCJibG9naWQiOiIxMTU3MTY3NjYiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjY2OTk2Mzg5NzUyIiwiYmxvZ2lkIjoiMTE1NzE2NzY2Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI2Njk5NjQ3NTg0NiIsImJsb2dpZCI6IjExNTcxNjc2NiIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTM2NTE0OTc3NjYiLCJibG9naWQiOiIxMTU3MTY3NjYiLCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjoiMTEwOTI3MjkxIiwicm9vdF9wb3N0aWQiOiI1MTQ5NTE1NjU0OCIsInBvc3RpZCI6IjUzNDIzMDk5OTA3IiwiYmxvZ2lkIjoiMTE1NzE2NzY2Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=FLPJHNNIKA&K=4103b9dcfc98b084f7e6b57d444b54e854626c2e427911dc1ce1140264506412&R=http%3A%2F%2Fdesignscrazed.com%2Fbest-free-tumblr-themes%2F"></noscript><script>
+    (function() {
+        var s = document.createElement('script');
+        var el = document.getElementsByTagName('script')[0];
+        s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.14.js';
+        s.onload = function(){
+            var YAHOO = window.YAHOO;
+            if (YAHOO) {
+                YAHOO.i13n.beacon_server = 'nol.yahoo.com';
+                var keys = { pd:'/', _li:0, i_rad:0, i_strm:0, b_id:115716766 };
+                var conf = {
+                    spaceid:1197719229,
+                    client_only:1,
+                    yql_enabled:false,
+                    keys:keys
+                }
+                YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+            }
+        }
+        el.parentNode.insertBefore(s, el);
+    })();
+</script><iframe id="tumblr_controls" class="tumblr_controls sticky visible" src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=230547946243567141986d70cdfc3e56#src=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;lang=en_US&amp;name=rubrictheme&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_7f863358f65e_64.png&amp;title=Rubric&amp;url=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;page_slide=slide" frameborder="0" height="36" scrolling="no" width="327"></iframe><div id="teaser_iframe_container" style="display: block; opacity: 0; visibility: hidden; position: fixed; top: 0px; right: 0px; bottom: 0px; width: 1px; height: 100%; z-index: 2147483646; overflow: hidden; background-color: rgba(0, 0, 0, 0.6); transition: width 0.25s ease-in-out 0s;"><iframe style="display: block; opacity: 1; visibility: visible; position: absolute; top: 0px; right: 0px; min-width: 100%; width: 360px; height: 100%;" src="http://www.tumblr.com/assets/html/iframe/teaser.html?_v=cd41a2f8bfb289dbd24e144909aa1a76#src=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;lang=en_US&amp;name=rubrictheme&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_7f863358f65e_64.png&amp;title=Rubric&amp;url=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" frameborder="0" height="1" scrolling="no" width="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=4060c716210bf1a77b21ccbefe4c8b61");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+
+<iframe src="http://assets.tumblr.com/assets/html/iframe/follow.html?_v=4060c716210bf1a77b21ccbefe4c8b61#src=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;lang=en_US&amp;name=rubrictheme&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_7f863358f65e_64.png&amp;title=Rubric&amp;url=http%3A%2F%2Frubrictheme.tumblr.com%2F&amp;page_slide=slide&amp;" id="tumblr_teaser_follow" frameborder="0" height="1" scrolling="no" width="1"></iframe></body>

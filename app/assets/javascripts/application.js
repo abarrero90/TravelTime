@@ -14,14 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
-//= require jssor.core
-//= require jssor.slider
-//= require jssor.utils
-//= require jquery-1.9.1.min.js
-//= require gallery-show.js
-//= require html5/jquery.min
-//= require html5/skel.min
-//= require html5/skel-panels.min
+
 
 
 

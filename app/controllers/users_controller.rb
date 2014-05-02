@@ -1,8 +1,14 @@
 class UsersController < ApplicationController
+
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  include SessionsHelper
   layout 'user-layout.html.erb'
   # GET /users
   # GET /users.json
+
+
+
+
   def index
     @users = User.all
     @photos = Photo.all
@@ -73,13 +79,13 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   # DELETE /users/1.json
-  def destroy
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+    def destroy
+      print 'This is the current user that we are going to delete' + String(current_user.id)
+      sign_out
+      print 'This is the current user that we are deleting' + String(current_user)
+      redirect_to home_path
     end
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
