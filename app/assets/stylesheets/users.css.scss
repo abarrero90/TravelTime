@@ -6,10 +6,10 @@
 body {
   font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
   font-size: 20px;
-  background: #CED9E4;
+  background: #FFF;
   margin: 0;
   padding-top: 50px;
-  padding-left: 10px;
+  padding-left: 0px;
   color: #000;
 }
 
@@ -144,30 +144,32 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   border: #fff 1px solid;
 }
 
-.container {
+               /* ---------------------------> USERS HEADER <---------------------------  */
+.user-header {
+  padding-left: 120px;
   padding-top: 10px;
-  padding-bottom: 20px;
-  width: 93%;
-  max-width: 2260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
-  min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
-  background: #FFF;
-  margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+  position: absolute;
+  width: 25%;
+  height: 1000px;
+  left: 0px;
+  background: #303030;
 }
 
-.user-resume {
-  display: table-cell;
-}
+
 
 .user-img_style {
-  width: 160px;
-  height: 160px;
-  padding-left: 10px;
+  width: 90px;
+  height: 90px;
+  padding-left: 0px;
   padding-bottom: 10px;
 }
 
 .user-name {
+  width: 160px;
+  display: block;
   text-transform: capitalize;
   font-size: 20px;
+  color: #a2babc;
 }
 
 .user-latest-photos {
@@ -178,39 +180,35 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   left: 25%;
 }
 
-.img-big {
-
-
+.user-menu {
+  margin-top: 100px;
+  width: 90%;
+  height: 60%;
+  color: #a2babc;
+}
+                    /* ---------------------------> USERS CONTAINER <---------------------------  */
+.user-container {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 75%;
+  margin-left: 25%;
+  height:960px;
 }
 
-.img-small {
-
-}
-
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
-.header {
-  background: #C5FBFB;
+.new-post {
   position: relative;
-  width: 30%;
-
+  widht: 360px;
+  height: 96%;
+  margin: 60px 25%;
+  background: #0B75AF;
 }
 
-.traveltime {
-  background: #C5FBFB;
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  right: -70%;
-  width: 230%;
-  height: 60.6%;
-  font-size: 60px;
-  text-align: center;
-  text-shadow: 6px 6px 5px rgba(0,0,0,0.2);
-  padding-top: 20%;
-  font-style:oblique;
-  text-decoration: underline;
 
-}
+
+
+
+
+
 
 
 

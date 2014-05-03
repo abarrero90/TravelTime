@@ -1,5 +1,12 @@
 module SessionsHelper
 
+  def authorize
+    unless current_user != nil
+      redirect_to home_path
+
+    end
+  end
+
   def sign_in(user)
     print 'WE ARE CALLING THIS METHOD'
     remember_token = User.new_remember_token

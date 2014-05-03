@@ -1,15 +1,6 @@
 class SessionsController < ApplicationController
   layout 'session-layout.html.erb'
-
-  def authorize
-    print 'Before nothing we ha9ve to set the logout function'
-    if current_user.nil?
-      redirect_to home_path
-    else
-      redirect_to user_path(current_user.id)
-    end
-  end
-
+  before_action :authorize, only: [:index, :destroy]
 
   def home
     @user = User.new

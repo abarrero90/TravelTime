@@ -13,9 +13,7 @@ TravelTime::Application.routes.draw do
 
 
   get '/test'  => 'photos#test'
-  get '/galery' => 'users#galery'
-  get '/index' => 'sessions#index'
-
+  get '/ppal' => 'users#ppal'
 
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'

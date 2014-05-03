@@ -71,3 +71,57 @@ img {
 }
 
 </style>
+
+                     ////////// ---> GALERY WORKING <----  \\\\\\\\\\\\
+
+
+<div class='user-latest-photos'>
+    <div><p>Latest Photos</p></div>
+    <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles (except 'top', 'left', 'width' and 'height') to css file or css block. -->
+    <div id="slider2_container" style="position: relative; width: 600px;
+            height: 300px; left: 2%; padding-bottom: 100px;">
+
+      <!-- Loading Screen -->
+      <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+        </div>
+        <div style="position: absolute; display: block; background: url(<%= asset_path 'loading.gif' %>) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+        </div>
+      </div>
+
+      <!-- Slides Container -->
+      <div u="slides" style="cursor: move; position: absolute; left: 0%; top: 0px; width: 600px; height: 300px;
+              overflow: hidden;">
+        <div>
+          <%= image_tag 'landscape/01.jpg', :u => 'image'   %>
+        </div>
+        <div>
+          <%= image_tag 'landscape/02.jpg', :u => 'image'   %>
+        </div>
+        <div>
+          <%= image_tag 'landscape/03.jpg', :u => 'image'   %>
+        </div>
+        <div>
+          <%= image_tag 'landscape/04.jpg', :u => 'image'   %>
+        </div>
+      </div>
+
+      <div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+
+        <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+      </div>
+
+      <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
+        </span>
+      <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 123px; right: 8px">
+        </span>
+      <!-- Arrow Navigator Skin End -->
+    </div>
+    <div class="btn-group btn-group-lg" style="padding-left:35%"><%= link_to 'Add Photo', adding_photo_path(@user) %></div>
+    <div class="btn-group btn-group-lg" style="padding-left:35%"><%= link_to 'Log out', user_path, method: :delete %></div>
+  </div> <!-- end of user-latest-photos  -->
