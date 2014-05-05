@@ -15,23 +15,53 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-                <!-- Container -->
-
-
 <div class="user-header">
 
-    <pan class='user-name'><%= @user.name  %> </pan>
-    <%= image_tag @user.avatar_file_name , :class => 'user-img_style' %>
-
+    <span class='user-name'><%= @user.name  %> </span>
+    <%= image_tag @user.avatar_file_name , {:class => 'user-img_style'} %>
+      <!--<p><a href="#" onclick="document.getElementById('hiddenForm').style.display = 'block'; return false;">Add a message</a></p>-->
+      <form action="#" id="hiddenForm" style="display: none;">
+        <textarea cols="50" rows="10"></textarea><br />
+        <input type="submit" value="send a message" />
+      </form>
     <div class = 'user-menu'>
         <p>Menu</p>
+        <%= link_to 'Gallery',loading_gallery_path , :remote => true %>
         <p>Galery</p>
         <p>Maps</p>
     </div>
-</div><!-- end of user-header -->
-<div class='user-container'>
-  <div class='new-post'>rfff
+</div>
 
+                    <!-- USER CONTAINER -->
+<div id='user-container' class='user-container' >
+  <div class='new-post'>
+    <%= form_for @comment , remote: true  do |f| %>
+        <% if @comment.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@comment.errors.count, 'error') %> prohibited this comment from being saved:</h2>
+
+              <ul>
+                <% @comment.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+      <p style= 'padding-top:10px;'>
+          <%= f.text_field :text , class:'form-control', required:'', placeholder: 'What is your plan?',style:   'display:table-cell'%>
+          <%= f.submit 'Post', class: 'btn', style: 'display:table-cell'   %>
+      </p>
+
+    <% end %>
+    <div id= 'user-comments'>
+        <% @user_comments.take(9).each do |comment|%>
+          <% if current_user.id == comment.users_id %>
+              <div class='user-comments'>
+                <%= comment.text %>
+              </div>
+          <% end %>
+        <% end %>
+    </div>
   </div>
 </div>
 

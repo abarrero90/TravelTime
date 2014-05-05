@@ -43,6 +43,14 @@
       <index name="index_admins_on_reset_password_token" unique="true" columns="reset_password_token"/>
       <index name="index_admins_on_email" unique="true" columns="email"/>
     </table>
+    <table name="comments" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
+      <column name="text" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
+      <column name="users_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
+      <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
+      <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="id"/>
+    </table>
     <table name="photos" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
       <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>

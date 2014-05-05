@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize, :set_user
+  before_action :authorize, :set_user , only: [:show, :edit, :update, :destroy]
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
   include SessionsHelper
   layout 'user-layout.html.erb'
@@ -15,9 +15,12 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @photos = Photo.all
-    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
+    @comment = Comment.new
+    @user_comments = Comment.order(:created_at).reverse_order
 
+    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
   end
+
 
 
   def add_photo
@@ -37,8 +40,14 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def galery
-    render 'gallery'
+  def gallery
+    print 'GALERIAAAAAA'
+    @user = User.all
+    respond_to do |format|
+        format.html { redirect_to user_path(current_user.id) }
+        format.js {}
+        format.json { render action: 'show', status: :created, location: @comment }
+    end
   end
 
 

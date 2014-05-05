@@ -188,22 +188,31 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
                     /* ---------------------------> USERS CONTAINER <---------------------------  */
 .user-container {
+  background-image: url('background-home.jpg');
   padding-top: 10px;
   padding-left: 10px;
   width: 75%;
   margin-left: 25%;
-  height:960px;
-}
+  height: 1000px;}
+
 
 .new-post {
   position: relative;
-  widht: 360px;
-  height: 96%;
   margin: 60px 25%;
   background: #0B75AF;
+  border-radius: 16px;
+  height: 60%;
+
 }
 
-
+.user-comments {
+  margin: 10px 2%;
+  height: 90%;
+  background: #c4e3f3;
+  border: 1px solid #a1a1a1;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
 
 
 
