@@ -1,11 +1,22 @@
 class SessionsController < ApplicationController
+  layout 'session-layout.html.erb'
+  before_action :authorize, only: [:index, :destroy]
 
+  def home
+    @user = User.new
+    render 'home'
+  end
 
-  def new
-    render 'new'
+  def index
+    render 'potada'
+  end
+
+  def sign_up
+    render 'sign_up'
   end
 
   def create
+    print 'ENTRANDO EN'
     user = User.find_by(name: params[:session][:name].downcase)
     if user && user.authenticate(params[:session][:password])
       # Sign the user in and redirect to the user's show page.

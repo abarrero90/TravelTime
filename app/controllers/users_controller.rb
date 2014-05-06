@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  before_action :authorize, :set_user , only: [:show, :edit, :update, :destroy]
+  #before_action :set_user, only: [:show, :edit, :update, :destroy]
+  include SessionsHelper
+  layout 'user-layout.html.erb'
   # GET /users
   # GET /users.json
+
   def index
     @users = User.all
     @photos = Photo.all
@@ -12,9 +15,12 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @photos = Photo.all
-    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
+    @comment = Comment.new
+    @user_comments = Comment.order(:created_at).reverse_order
 
+    print 'ID DEL CURRENT_USER == >' + String(current_user.id)
   end
+
 
 
   def add_photo
@@ -33,6 +39,17 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
+
+  def gallery
+    print 'GALERIAAAAAA'
+    @user = User.all
+    respond_to do |format|
+        format.html { redirect_to user_path(current_user.id) }
+        format.js {}
+        format.json { render action: 'show', status: :created, location: @comment }
+    end
+  end
+
 
   # POST /users
   # POST /users.json
@@ -68,13 +85,13 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   # DELETE /users/1.json
-  def destroy
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+    def destroy
+      print 'This is the current user that we are going to delete' + String(current_user.id)
+      sign_out
+      print 'This is the current user that we are deleting' + String(current_user)
+      redirect_to home_path
     end
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

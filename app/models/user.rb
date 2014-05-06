@@ -1,9 +1,11 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_many :photos
+  has_many :comments
   has_attached_file :avatar, :styles => { :small => '100x100>', :thumb => '100x100>' }, :default_url => '/images/:style/missing.png'
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   before_create :create_remember_token
+
 
   def self.latest
     User.order(:updated_at).last

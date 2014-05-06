@@ -1,20 +1,23 @@
-<% provide(:title, 'Sign in') %>
-<h1>Sign in</h1>
+<div class='header'>
+    <div class='App-name'>
+      <p>Travel Time</p>
+    </div>
+    <div class='sigin'>
+        <%= form_for(:session, url: sessions_path, html: { class: 'form-inline' , role:  'form'}) do |f| %>
+          <div class="form-group">
+            <%= f.text_field :name, placeholder: 'Nickname' %>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
 
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+            <%= f.password_field :password, placeholder: 'Password' %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+            <%= f.submit 'Sign in', class: 'btn btn-large btn-primary'  %>
+          </div>
+        <% end %>
+    </div>
+</div>
 
-        <%= f.submit 'Sign in', class: 'btn btn-large btn-primary' %>
-    <% end %>
+<div class ='session-container'>
 
-    <p> New user? <%= link_to 'Sign up now!', signup_path %></p>
-    <%= link_to 'Profile', current_user %>
-  </div>
+
+
 </div>

@@ -1,17 +1,24 @@
 TravelTime::Application.routes.draw do
 
-  resources :photos
-  resources :sessions, only: [:new, :create, :destroy]
-  root 'sessions#new' , as: 'home'
-  resources :users
+  resources :comments
 
+  root 'sessions#home' , as: 'home'
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :users
+  resources :photos
 
   get '/home/login' => 'home#login'
   post '/home/add/' => 'photos#add'
   get  '/home/add/' => 'photos#add'
   get '/users/:id/add' => 'users#add_photo', as: 'adding_photo'
-  get '/test'  => 'photos#test'
+  get '/sign-up' => 'sessions#sign_up', as: 'sign_up'
+  get '/users/:id/gallery' => 'users#gallery', as: 'loading_gallery'
 
+
+
+  get '/test'  => 'photos#test'
+  get '/ppal' => 'users#ppal'
+  get '/ajax' => 'users#ajax'
 
 
   match '/signup',  to: 'users#new',            via: 'get'

@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  layout 'home-layout.html.erb'
+
   def index
 
   end
