@@ -14,7 +14,9 @@ class PhotosController < ApplicationController
   def show
   end
 
-
+  def test
+    render 'prueba'
+  end
   # GET /photos/new
   def new
     @photo = Photo.new
@@ -37,19 +39,13 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    @user = session[:user_id]
-    print 'PARAMETROS =======>     '
-    print @user
-    #print 'ESTE ES EL USUARIO' + String(@add_photo_user_id.id)
-    #@photo = Photo.create(photo_params, user_id: @user.id)
-    #@photo = user.photos.create(photo_params)
-    @photo = Photo.create(order_date: Time.now, customer_id: @user.id)
-    print 'ID of the user that already saved the photo: ' + String(@user.id)
-
-
+    print 'ID of the user that already saved the photo: ' + String(current_user.id)
+    @photo = Photo.new(photo_params)
+    @photo.title = photo_params[:title]
+    @photo.user_id = current_user.id
     respond_to do |format|
       if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+        format.html { redirect_to user_path(current_user), notice: 'Photo was successfully created.' }
         format.json { render action: 'show', status: :created, location: @photo }
       else
         format.html { render action: 'new' }
@@ -90,6 +86,6 @@ class PhotosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:title, :url, :avatar, :user_id, :id)
+      params.require(:photo).permit(:title, :url, :avatar, :user_id, :id, :original_filename)
     end
 end

@@ -1,36 +1,67 @@
-<html>
-    <body>
-        <div class = 'container'>
-            <div class = 'personal'>
-              <%= @user.id %>
-              <div class = 'photo'>
-                <%= image_tag @user.avatar_file_name %>
-               </div>
+<title><%= @user.name %></title>
+
+                    <!-- NAVBAR -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <p class="navbar-text">Travel Time</p>
+  <div class="container-fluid">
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
             </div>
-            <div class = 'latest_photos'>
-              <% if Photo.count.zero? %>
-                <p>Add your first photo</p>
-                <%= link_to 'Add Photo' , new_photo_path %>
-              <% else %>
-                  <%= link_to 'Add Photo', adding_photo_path(@user) %>
-                  <div class = 'galery'>
-                    <% cache ['photos', Photo.latest] do %>
-                        <% @photos.each do |photo| %>
-                            <% if @user.id == photo.user_id %>
-                                <%= image_tag photo.avatar_file_name %>
-                            <% end %>
-                        <% end %>
-                    <% end %>
-                  </div>
-              <% end %>
+            <button type="submit" class="btn btn-default">Submit Does not work yet</button>
+          <div class="btn-group btn-group-lg"><%= link_to 'Log out', user_path, method: :delete %></div>
+
+        </form>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="user-header">
+
+    <span class='user-name'><%= @user.name  %> </span>
+    <%= image_tag @user.avatar_file_name , {:class => 'user-img_style'} %>
+      <!--<p><a href="#" onclick="document.getElementById('hiddenForm').style.display = 'block'; return false;">Add a message</a></p>-->
+      <form action="#" id="hiddenForm" style="display: none;">
+        <textarea cols="50" rows="10"></textarea><br />
+        <input type="submit" value="send a message" />
+      </form>
+    <div class = 'user-menu'>
+        <p>Menu</p>
+        <%= link_to 'Gallery',loading_gallery_path , :remote => true %>
+        <p>Galery</p>
+        <p>Maps</p>
+    </div>
+</div>
+
+                    <!-- USER CONTAINER -->
+<div id='user-container' class='user-container' >
+  <div class='new-post'>
+    <%= form_for @comment , remote: true  do |f| %>
+        <% if @comment.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@comment.errors.count, 'error') %> prohibited this comment from being saved:</h2>
+
+              <ul>
+                <% @comment.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
             </div>
-            <div id='test'></div>
-            <div class = 'calendar'></div>
-            <div class = 'table'></div>
-        </div>
+        <% end %>
+      <p style= 'padding-top:10px;'>
+          <%= f.text_field :text , class:'form-control', required:'', placeholder: 'What is your plan?',style:   'display:table-cell'%>
+          <%= f.submit 'Post', class: 'btn', style: 'display:table-cell'   %>
+      </p>
 
-    </body>
-
-</html>
-
+    <% end %>
+    <div id= 'user-comments'>
+        <% @user_comments.take(9).each do |comment|%>
+          <% if current_user.id == comment.users_id %>
+              <div class='user-comments'>
+                <%= comment.text %>
+              </div>
+          <% end %>
+        <% end %>
+    </div>
+  </div>
+</div>
 

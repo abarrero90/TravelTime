@@ -1,0 +1,23 @@
+<div class='header'>
+    <div class='App-name'>
+      <p>Travel Time</p>
+    </div>
+    <div class='sigin'>
+        <%= form_for(:session, url: sessions_path, html: { class: 'form-inline' , role:  'form'}) do |f| %>
+          <div class="form-group">
+            <%= f.text_field :name, placeholder: 'Nickname' %>
+
+
+            <%= f.password_field :password, placeholder: 'Password' %>
+
+            <%= f.submit 'Sign in', class: 'btn btn-large btn-primary'  %>
+          </div>
+        <% end %>
+    </div>
+</div>
+
+<div class ='session-container'>
+
+
+
+</div>
