@@ -1,3 +1,15 @@
+<script>
+    $(document).ready(function(){
+        // When Cancel button is pressed in 'adding new photo'
+        $('#cancel').click(function(){
+            alert('hello');
+            $('#modal_add_image').hide();
+        });
+
+
+    });
+</script>
+
 <%= form_for @photo, :url => photos_path, :html => { :multipart => true } do |f| %>
   <% if @photo.errors.any? %>
     <div id="error_explanation">
@@ -11,14 +23,13 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="field" style='padding-top:10px'>
+    <%= f.text_field :title, class:'form-control', required:'', placeholder: 'Write title!',style: 'display:table-cell' %>
+    <%= f.submit 'Add Photo', class: 'btn', style: 'display:table-cell'   %>
+    <%= f.file_field :avatar , class: 'btn', style: 'margin-left:0px' %>
+
   </div>
-  <div>
-    <%= f.file_field :avatar %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
 <% end %>
+
+<%= button_tag 'Cancel', class: 'btn', :id => 'cancel'%>

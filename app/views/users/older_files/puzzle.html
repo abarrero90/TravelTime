@@ -1,0 +1,308 @@
+<!-- CREACION DEL PUZZLE -->
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+    <head>
+        <TITLE>Puzzle</TITLE>
+
+		
+		
+
+		<style>
+			table.myTable{display:none;}
+			body {background:#5d9ab2 }
+			
+		</style>
+		
+        <script>
+
+		var user;
+		var pass;       
+		
+		var usuarios = new Array(2); //Array de 2 usuarios 	
+		for (i=0;i<2;i++) {
+			usuarios[i] = new Array(3);//TRes posiciones en mi array. 1)Nombre 2)Pass 3)Tiempo
+		}
+
+		usuarios[0][0] = 'alf';
+		usuarios[0][1] = 'alf';
+		usuarios[1][0] = 'al';
+		usuarios[1][1] = 'al';
+		
+      	array_cookie = new Array(2);
+      	
+		function setCookie(c_name,value,exdays)
+		{
+			var exdate=new Date();
+			exdate.setDate(exdate.getDate() + exdays);
+			var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+			document.cookie=c_name + "=" + c_value;
+
+
+		}
+		function getCookie(c_name)
+		{
+			var i,x,y,ARRcookies=document.cookie.split(";");
+			//document.write(document.cookie);
+			for (i=0;i<ARRcookies.length;i++){
+			  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+			  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+			  x=x.replace(/^\s+|\s+$/g,"");
+			  if (x==c_name){  
+				return unescape(y);
+			  }
+			}
+		}
+      	function deleteCookie( value ) {
+			if ( getCookie( value ) == user ){ document.cookie = value + '=' +
+					';expires=Thu, 01-Jan-1970 00:00:01 GMT';	
+				//	alert(document.cookie);
+			}
+		}
+
+
+		function InsertTablaTiempos (){
+
+		
+			tab = document.getElementById("myTable");
+			contenedor = document.createElement('div');
+			contenedor.id = "tabla_tiempos";
+			tab.parentNode.appendChild(contenedor);
+			var tiempos_array = new Array (2);
+			//TablaTiempos = document.createElement('table');
+			//Obtenemos las cookies de los usuarios. 
+			var user1 = usuarios[0][0];
+			var user2 = usuarios[1][0]
+			tiempos_array[0] = getCookie(user1);
+			tiempos_array[1] = getCookie(user2);
+			
+			var TablaTiempos = '<table id="TablaTiempos" align="left" frame="box" border="2" width="80" "height="80"" >';
+			
+			TablaTiempos += '<TR><TD>Usuario</TD><TD>Tiempo</TD></TR>';
+			TablaTiempos += '<TR><TD>'+user1+'</TD><TD>'+tiempos_array[0]+'</TD></TR>';
+			TablaTiempos += '<TR><TD>'+user2+'</TD><TD>'+tiempos_array[1]+'</TD></TR>';
+			contenedor.innerHTML = TablaTiempos;
+			//contenedor.appendChild(TablaTiempos);
+
+			
+
+		}
+		
+
+
+		var tiempo= new Date();
+		var hora= tiempo.getTime();
+
+		var correcto  = false; //puzzle correcto o no
+			
+        function Parseo (imagen) {
+        	for (i=0; i<12; i++) {
+		    	var pars = imagen.split("/");//para separar la fuente con el directorio, con /		
+			}
+			return pars[12];
+		}
+		
+		function Terminado () {
+			correcto = true;
+			var num = 0;
+			while  (num<12) {
+	
+				var img = "img" + num;
+				var imagen_seleccionada = document.getElementById(img).src; //cogemos el source de la imagen
+				var imagen = Parseo(imagen_seleccionada); //parseamos el source hasta quedarnos con el "puzzle.jpg"
+				var puzzle = "puzzle" + (num + 1) + ".jpg"; //creamos una variable para tener el nombre que deberia tener esa imagen
+				num++
+				
+				if (num==12) {
+					puzzle = "negro.jpg";
+				}
+				
+				if (imagen != puzzle) { //Si no coincide, entonces salimos del bucle. 
+					alert("Intentalo de nuevo");
+					correcto = false;
+					break;
+				}
+			}
+			
+			if (correcto) {
+				tiempo_trans = new Date();
+				hora_trans = (tiempo_trans.getTime() - hora)/1000;
+				alert("Lo lograstes " + user +", este es tu tiempo:  " + hora_trans);
+				InsertTablaTiempos();
+				//document.write(document.cookie);
+				if (getCookie(user) >= hora_trans) {
+					//setCookie(user,hora_trans,365); //se puede establecer varios campos en value de la forma (hora + " " + ..)
+				}
+				else if (getCookie(user) == null) {
+					setCookie(user,hora_trans,365);
+					//document.write(document.cookie);
+					
+				}
+				else { alert("Intenta mejorar tu tiempo"); }
+				
+				var img_original ="<img src='puzzle.jpg' width='400' height=300' / >";
+				document.getElementById("myTable").innerHTML=img_original;
+				borrar_boton = document.getElementById("boton");
+				document.getElementById('contenedor').removeChild(borrar_boton);
+
+			}
+		}
+					
+
+
+
+			
+		function InsertImages() {
+			
+			//document.getElementById("myTable").style.display="block";
+		
+			
+		
+			var img_array = new Array(12);
+			
+			img_array[0] = "puzzle1.jpg";
+			img_array[1] = "puzzle2.jpg";
+			img_array[2] = "puzzle3.jpg";
+			img_array[3] = "puzzle4.jpg";
+            img_array[4] = "puzzle5.jpg";
+			img_array[5] = "puzzle6.jpg";
+			img_array[6] = "puzzle7.jpg";
+			img_array[7] = "puzzle8.jpg";
+			img_array[8] = "puzzle9.jpg";
+			img_array[9] = "puzzle10.jpg";
+			img_array[10] = "puzzle11.jpg";
+			img_array[11] = "negro.jpg";//IMAGEN BLANCA
+			
+			//img_array = img_array.sort(function() {return Math.random() - 0.5}) //--> desordena el array 
+
+			
+			    	var tabla = '<table id="myTable" align="center" frame="box" border="2" width="80" "height="80"" style=background-image:url("puzzle.jpg") >';
+			tabla += '<TR><TD><IMG width="100" height="100" src='+img_array[0]+' id="img0" onClick="Mover('+"'img0'"+',0)"></TD><TD><IMG width="100"  height="100" src='+img_array[1]+' id="img1" onClick="Mover('+"'img1'"+',1)"></TD><TD><IMG width="100" height="100" src='+img_array[2]+' id="img2" onClick="Mover('+"'img2'"+',2)"></TD><TD><IMG width="100" height="100" src='+img_array[3]+' id="img3" onClick="Mover('+"'img3'"+',3)"></TD></TR>';
+		
+			tabla += '<TR><TD><IMG width="100" height="100" src='+img_array[4]+' id="img4" onClick="Mover('+"'img4'"+',4)"></TD><TD><IMG width="100" height="100" src='+img_array[5]+' id="img5" onClick="Mover('+"'img5'"+',5)"></TD><TD><IMG width="100" height="100" src='+img_array[6]+' id="img6" onClick="Mover('+"'img6'"+',6)"></TD><TD><IMG width="100" height="100" src='+img_array[7]+' id="img7" onClick="Mover('+"'img7'"+',7)"></TD></TR>';
+		
+			tabla += '<TR><TD><IMG width="100" height="100" src='+img_array[8]+' id="img8" onClick="Mover('+"'img8'"+',8)"></TD><TD><IMG width="100" height="100" src='+img_array[9]+' id="img9" onClick="Mover('+"'img9'"+',9)"></TD><TD><IMG width="100" height="100" src='+img_array[10]+' id="img10" onClick="Mover('+"'img10'"+',10)"></TD><TD><IMG width="100" heigth="100"  src='+img_array[11]+' id="img11" onClick="Mover('+"'img11'"+',11)"></TD></TR>';
+			tabla += '</table>';
+			
+	
+		var tabla= document.getElementById("Form").innerHTML=tabla;
+		
+
+	   // var boton = '<input type="button" id="boton" onClick="Terminado()">';
+		tab = document.getElementById("myTable");
+		contenedor = document.createElement('div');
+		contenedor.id = 'contenedor';
+		tab.parentNode.appendChild(contenedor);
+		
+	
+		boton = document.createElement('input');
+		boton.id = 'boton';
+		boton.type = "button";
+		boton.value = "comprobar";
+		boton.align = "center";
+		boton.onclick = function() {Terminado()}
+
+		contenedor.appendChild(boton);
+		}
+		
+	
+	
+        var estado = 0;
+        var imagen_1;
+        var imagen_2;
+        
+        function Mover(que,identify){	
+			ar = (identify -4) //Casilla arriba
+			ab = (identify +4) //Casilla abajo
+			iz = (identify -1) //Casilla izquierda
+			de = (identify +1) //Casilla derecha
+			identify = 'img' + identify;
+
+
+        	if (ar >=0) { //condicion para mover hacia arriba
+        		ar = "img" + ar;
+				imagen_arriba = document.getElementById(ar).src;
+				var negro = Parseo(imagen_arriba);
+				if (negro == "negro.jpg"){
+					document.getElementById(ar).src = document.getElementById(identify).src;
+					document.getElementById(identify).src = imagen_arriba;
+				}
+					
+			}
+			if (ab<13 && ab>0 && ab!=14 && ab!=12) { //condicion para mover hacia abajo
+
+				ab = "img" + ab;
+				imagen_abajo = document.getElementById(ab).src;
+				var blanco = Parseo(imagen_abajo);
+				if (blanco == "negro.jpg"){
+					document.getElementById(ab).src = document.getElementById(identify).src;
+					document.getElementById(identify).src = imagen_abajo;
+				}
+			}
+			if (iz !=0,4,9 && iz>=0){ //condicion para mover hacia izq
+				iz = "img" + iz;
+				imagen_iz = document.getElementById(iz).src;
+				var negro = Parseo(imagen_iz);
+				
+				if (negro == "negro.jpg"){
+
+					document.getElementById(iz).src = document.getElementById(identify).src;
+					document.getElementById(identify).src = imagen_iz;
+				}
+			}
+			if (de !=5,13) { //condicion para mover hacia derecha
+				de = 'img' + de;
+				imagen_de = document.getElementById(de).src;
+
+				var negro = Parseo(imagen_de)
+				//document.write(negro);
+
+				if (negro == 'negro.jpg') {
+					document.getElementById(de).src = document.getElementById(identify).src;
+					document.getElementById(identify).src = imagen_de;
+				}
+
+			}
+         }
+        
+        
+	
+		
+        function Validation () {
+        	 user = Datos.USER.value;
+        	 pass = Datos.PASS.value;
+        	
+        	for (i=0;i<2;i++){
+		    	if ((user == usuarios[i][0]) && (pass == usuarios[i][1])){
+		    		alert("Welcome again " + user);
+		    		InsertImages();
+
+		    	}
+			}
+        }
+            
+         </script>
+    </head>
+
+    <body>	
+    	<div id="Form" ALIGN = CENTER width="300" height="200">
+		    <P ALIGN=CENTER>
+		    <H1>Identificacion</H1>
+		    <FORM name="Datos" method="GET">
+		        User: <INPUT TYPE=TEXT NAME="USER"  SIZE=8><BR>
+		        Pass: <INPUT TYPE=PASSWORD NAME="PASS"  SIZE=8><BR>
+				<button onclick="Validation()">Entrar</button>
+		    </FORM>
+
+		    
+		 </div>
+    
+
+    </body> 
+    
+
+  
+
+   
+</html> 
+            

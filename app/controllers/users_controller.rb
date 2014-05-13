@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize, :set_user , only: [:show, :edit, :update, :destroy]
+  before_action :authorize, :set_user , only: [:show, :edit, :update, :destroy, :gallery]
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
   include SessionsHelper
   layout 'user-layout.html.erb'
@@ -14,19 +14,19 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @photos = Photo.all
     @comment = Comment.new
+    @user = User.all
     @user_comments = Comment.order(:created_at).reverse_order
-
     print 'ID DEL CURRENT_USER == >' + String(current_user.id)
   end
-
-
 
   def add_photo
     @photo = Photo.new
     @us_id = params[:id]
-    render 'add_photo'
+    @user_comments = Comment.order(:created_at).reverse_order
+    respond_to do |format|
+      format.js {render :layout => false}
+    end
   end
 
   # GET /users/new
@@ -38,16 +38,18 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    render layout: false
   end
 
   def gallery
-    print 'GALERIAAAAAA'
+    @photos = Photo.all
+    print 'Galery'
     @user = User.all
-    respond_to do |format|
-        format.html { redirect_to user_path(current_user.id) }
-        format.js {}
-        format.json { render action: 'show', status: :created, location: @comment }
-    end
+    render 'users-gallery'
+  end
+
+  def maps
+    render 'user-map'
   end
 
 
@@ -73,8 +75,8 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+      if current_user.update(user_params)
+        format.html { redirect_to user_path(current_user), notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

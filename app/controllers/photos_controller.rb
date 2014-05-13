@@ -32,6 +32,7 @@ class PhotosController < ApplicationController
     user = User.find(params[:id])
     print 'User that is saving a new photo ==> '
     print user.id
+
     # Render the view of the form in order to add a new photo.
     render  'new'
    end
