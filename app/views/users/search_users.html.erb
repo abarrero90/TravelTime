@@ -1,0 +1,11 @@
+<div class='search-content'>
+  <% @users_result.each do |user| %>
+      <div class='searched-user'>
+          <%= image_tag user.avatar_file_name , :class => 'user-img_style', :id => 'jquery'%>
+          <span class='search-name-style'><%= user.name  %></span>
+          <div class='search-options'>Follow</div>
+      </div>
+      <br>
+  <% end %>
+</div>
+

@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   before_create :create_remember_token
 
+  def self.search(query)
+    # where(:title, query) -> This would return an exact match of the query
+    where('name like ?', "%#{query}%")
+  end
 
   def self.latest
     User.order(:updated_at).last

@@ -16,6 +16,7 @@ TravelTime::Application.routes.draw do
   get '/users/:id/gallery' => 'users#gallery', as: 'loading_gallery'
   get '/users/:id/maps' => 'users#maps', as: 'loading_maps'
   get '/users/:id/destroy' => 'users#destroy' , as: 'user_destroy'
+  get '/users/:id/search' => 'users#search_users' , as: 'user_search'
 
 
 

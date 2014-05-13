@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :authorize, :set_user , only: [:show, :edit, :update, :destroy, :gallery]
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
   include SessionsHelper
-  layout 'user-layout.html.erb'
   # GET /users
   # GET /users.json
 
@@ -18,6 +17,15 @@ class UsersController < ApplicationController
     @user = User.all
     @user_comments = Comment.order(:created_at).reverse_order
     print 'ID DEL CURRENT_USER == >' + String(current_user.id)
+  end
+
+  def search_users
+    search = params[:search]
+    print 'This is what we are looking for' + String(search)
+    if params[:search]
+      @users_result = User.search(params[:search]).order('created_at')
+    end
+    render :layout => 'search'
   end
 
   def add_photo

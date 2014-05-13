@@ -380,3 +380,28 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
   width:375px;
   height:203px;
 }
+
+                                                                        /* SEARCH CONTENT */
+.search-content {
+  width: 600px;
+  height: auto;
+  margin: 0 25%;
+  background: #c4e3f3;
+  padding: 20px 20px;
+}
+.searched-user {
+
+}
+.search-name-style {
+  width: 160px;
+  position: absolute;
+  padding-left: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.search-options{
+  position: absolute;
+  display: inline;
+  margin-left:388px;
+}
